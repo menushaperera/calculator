@@ -1,0 +1,74 @@
+body {
+  font-family: "Roboto", sans-serif;
+  background: url('cal_background.jpg') no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 10px;
+  }
+  
+  .logo {
+    font-family: "Poppins", sans-serif;
+    color: #080808;
+    font-weight: bold;
+    font-size: 45px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+  }
+  
+.calculator {
+  display: grid;
+  grid-template-rows:
+    minmax(80px, auto)
+    repeat(5, 60px);
+  grid-template-columns: repeat(4, 60px);
+  justify-content: center;
+  background-color: #003052;
+  padding: 1.4rem;
+  border-radius: 12px;
+  gap: 0.7rem;
+}
+.calculator button {
+  border: none;
+  font-family: inherit;
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #eb5600;
+  background-color: #505053;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.calculator button:hover {
+  background-color: #484951;
+}
+.span-2 {
+  grid-column: span 2;
+}
+.calculator > .output {
+  font-size: 2rem;
+  background-color: inherit;
+  color: #4dd8ba;
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-end;
+  word-break: break-all;
+  border-radius: inherit;
+}
+
+.output .prev-display {
+  font-size: 1.3rem;
+  font-weight: 400;
+  color: #cfb93f;
+}
